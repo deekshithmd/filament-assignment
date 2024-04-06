@@ -14,8 +14,6 @@ export const PoolsTable = () => {
                     Pools?.map(pool => {
                         return (
                             <tr key={pool?.id} className='text-sm text-[#E5E7EB] font-medium border-b border-[#262626] relative'>
-
-
                                 <td className='py-3 text-center'>
                                     {pool?.pool}
                                 </td>
@@ -28,7 +26,6 @@ export const PoolsTable = () => {
                                 <td className='py-3 text-center'>
                                     ${pool?.unrealisedPnl?.toLocaleString()}
                                 </td>
-
                             </tr>
                         )
                     })

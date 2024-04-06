@@ -7,7 +7,13 @@ const Chart = dynamic(() => import('react-apexcharts'), {
     ssr: false,
 });
 
-const ToggleStates: { id: number; state: string; label: string }[] = [
+type ToggleStateType = {
+    id: number;
+    state: string;
+    label: string
+}
+
+const ToggleStates: ToggleStateType[] = [
     {
         id: 1,
         state: 'portfolio',
@@ -21,7 +27,7 @@ const ToggleStates: { id: number; state: string; label: string }[] = [
 ]
 
 export const Statistics = () => {
-    const [selectedState, setSelectedState] = useState(ToggleStates[0])
+    const [selectedState, setSelectedState] = useState<ToggleStateType>(ToggleStates[0])
 
     //constructing options for drawing graph
     const options = {

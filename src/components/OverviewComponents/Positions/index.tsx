@@ -18,7 +18,6 @@ export const PositionsTable = () => {
                 <th className='pr-14 pl-5 py-2'>Liquidation Price</th>
                 <th className='pr-14 pl-5 py-2'>Fees</th>
                 <th className='sticky right-0 top-0 bg-[#1B1C1E] px-5'></th>
-
             </thead>
             <tbody>
                 {

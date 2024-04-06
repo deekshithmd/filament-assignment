@@ -1,9 +1,6 @@
 'use client'
 import clsx from 'clsx'
 import { useState } from 'react'
-import { Positions, OpenOrders, Pools } from '@/utils/constants'
-import { CiCirclePlus } from "react-icons/ci";
-import { CgCloseO } from "react-icons/cg";
 import { Statistics } from '@/components/OverviewComponents/Statistics.tsx';
 import { OverviewData } from '@/components/OverviewComponents/OverviewData';
 import { OpenOrdersTable } from '@/components/OverviewComponents/OpenOrders';
@@ -34,13 +31,8 @@ const Tabs: TabType[] = [
   }
 ]
 
-
-
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState<TabType>(Tabs[0]);
-
-
-
 
   return (
     <div className='flex h-full w-full flex-col items-start justify-start gap-y-10 px-20 py-10' >
