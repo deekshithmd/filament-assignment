@@ -1,8 +1,11 @@
 'use client'
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { AiFillCaretDown } from "react-icons/ai";
-import Chart from "react-apexcharts";
+const Chart = dynamic(() => import('react-apexcharts'), {
+    ssr: false,
+});
 
 const ToggleStates: { id: number; state: string; label: string }[] = [
     {
